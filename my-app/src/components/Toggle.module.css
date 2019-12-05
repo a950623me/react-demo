@@ -1,0 +1,41 @@
+.switch:after, .switch:before {
+    content: "";
+    position: absolute;
+    -webkit-transition: -webkit-transform .3s;
+    transition: -webkit-transform .3s;
+    transition: transform .3s;
+    transition: transform .3s,-webkit-transform .3s;
+}
+.switch {
+    display: block;
+    box-sizing: border-box;
+    position: relative;
+    width: 80px;
+    height: 48px;
+    border-radius: 48px;
+    background-color: #e2e4ea;
+}
+.switch:before {
+    top: 0;
+    left: 0;
+    width: 80px;
+    height: 48px;
+    border-radius: 24px;
+    background-color: #e2e4ea;
+}
+.switch:after {
+    top: 4px;
+    left: 4px;
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    border-radius: 50%;
+}
+.switch{
+    display: block;
+    width: 80px;
+    height: 48px;
+    border-radius: 48px;
+    background-color: #e2e4ea;
+    outline: none;
+}
